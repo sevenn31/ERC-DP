@@ -6,7 +6,7 @@ from transformers import AutoModel, AutoTokenizer
 from transformers import RobertaTokenizer, RobertaModel
 
 class bertaModel(nn.Module):
-    def __init__(self, dropout_rate=0.1,nums=6):
+    def __init__(self, dropout_rate=0.3,nums=6):
         super(bertaModel, self).__init__()
         self.roberta = AutoModel.from_pretrained('')#simcse
         self.tokenizer = AutoTokenizer.from_pretrained('')#simcse
